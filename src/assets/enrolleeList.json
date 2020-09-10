@@ -1,0 +1,33 @@
+{
+  "Enrollees": [{
+      "id": "100",
+      "name": "Romin Irani",
+      "activationStatus": true,
+      "birthDate": "07/07/1995"
+    },
+    {
+      "id": "101",
+      "name": "Neil Irani",
+      "activationStatus": true,
+      "birthDate": "08/07/1991"
+    },
+    {
+      "id": "102",
+      "name": "Tom Hanks",
+      "activationStatus": false,
+      "birthDate": "09/07/1992"
+    },
+    {
+      "id": "103",
+      "name": "Hello World",
+      "activationStatus": true,
+      "birthDate": "10/07/1995"
+    },
+    {
+      "id": "104",
+      "name": "Welcome World",
+      "activationStatus": false,
+      "birthDate": "08/07/1981"
+    }
+  ]
+}

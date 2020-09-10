@@ -1,0 +1,29 @@
+<div *ngIf="apiStatus===1">
+    <!-- We can place a spinner here -->
+    Loading...
+</div>
+<div *ngIf="apiStatus!==1">
+    <div class="alert alert-danger" role="alert" *ngIf="apiStatus===3">
+        <strong>Oh snap!</strong> API Error!!
+    </div>
+    <div *ngIf="apiStatus===2">
+        <table class="table ">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Activation Status</th>
+                    <th scope="col">Date Of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let enrollee of enrolleeList" [ngClass]="{ 'active-true': enrollee?.activationStatus}">
+                    <td>{{enrollee?.id}}</td>
+                    <td>{{enrollee?.name}}</td>
+                    <td>{{enrollee?.activationStatus}}</td>
+                    <td>{{enrollee?.birthDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
